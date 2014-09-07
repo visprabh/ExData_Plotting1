@@ -1,3 +1,6 @@
+# Exploratory Data Analysis #
+# Project1: Plot4
+
 fileUrl<-"https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
 download.file(fileUrl, destfile = "./power_Consumption.zip", method="curl")
 unzip("power_consumption.zip")
@@ -18,7 +21,7 @@ plot(subset_HPC$dateTime,subset_HPC$Global_active_power, type="l", ylab= "Global
 with(subset_HPC, plot(subset_HPC$dateTime,subset_HPC$Sub_metering_1, type="l", ylab= "Energy Sub metering", xlab=""))
 lines(subset_HPC$dateTime,subset_HPC$Sub_metering_2,col="red")
 lines(subset_HPC$dateTime,subset_HPC$Sub_metering_3,col="blue")
-legend("topright", lty = c(1,1,1),  col = c("black", "red", "blue"), legend = c("Sub_metering_1 ", "Sub_metering_2 ","Sub_metering_3 "), cex=.75, bty="n")
+legend("topright", lty = c(1,1,1),  col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"), cex=.75, bty="n")
 
 with(subset_HPC, plot(subset_HPC$dateTime,subset_HPC$Voltage, type="l", ylab= "Voltage", xlab="datetime"))
 

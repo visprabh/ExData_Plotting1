@@ -1,3 +1,6 @@
+# Exploratory Data Analysis #
+# Project1: Plot2
+
 fileUrl<-"https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
 download.file(fileUrl, destfile = "./power_Consumption.zip", method="curl")
 unzip("power_consumption.zip")
